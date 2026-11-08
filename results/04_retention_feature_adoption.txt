@@ -1,0 +1,30 @@
+      feature      | n_adopters | retention_adopters_pct | n_non_adopters | retention_non_adopters_pct | lift_pp | lift_ratio | z_score 
+-------------------+------------+------------------------+----------------+----------------------------+---------+------------+---------
+ use_search_filter |       1880 |                  47.93 |           2794 |                      25.66 |   22.26 |       1.87 |   15.69
+ profile_setup     |       1892 |                  40.27 |           2782 |                      30.77 |    9.51 |       1.31 |    6.70
+ invite_friend     |        341 |                  40.76 |           4333 |                      34.13 |    6.63 |       1.19 |    2.48
+
+ features_adopted_day1 | users | retained_users | retention_pct 
+-----------------------+-------+----------------+---------------
+                     0 |  1640 |            353 |         21.52
+                     1 |  2044 |            775 |         37.92
+                     2 |   901 |            443 |         49.17
+                     3 |    89 |             47 |         52.81
+
+ did_profile_setup | did_search_filter | did_invite_friend | users | retained_users | retention_pct |     note     
+-------------------+-------------------+-------------------+-------+----------------+---------------+--------------
+                 0 |                 0 |                 0 |  1640 |            353 |         21.52 | 
+                 1 |                 0 |                 0 |   998 |            312 |         31.26 | 
+                 0 |                 1 |                 0 |   959 |            438 |         45.67 | 
+                 1 |                 1 |                 0 |   736 |            376 |         51.09 | 
+                 0 |                 1 |                 1 |    96 |             40 |         41.67 | small sample
+                 1 |                 1 |                 1 |    89 |             47 |         52.81 | small sample
+                 0 |                 0 |                 1 |    87 |             25 |         28.74 | small sample
+                 1 |                 0 |                 1 |    69 |             27 |         39.13 | small sample
+
+      feature      | raw_lift_pp | lift_low_activity_pp | lift_mid_activity_pp | lift_high_activity_pp | activity_adjusted_lift_pp | smallest_adopter_cell 
+-------------------+-------------+----------------------+----------------------+-----------------------+---------------------------+-----------------------
+ use_search_filter |       22.26 |                25.59 |                19.93 |                 13.34 |                     19.62 |                   223
+ profile_setup     |        9.51 |                10.49 |                 7.72 |                  6.45 |                      8.22 |                   544
+ invite_friend     |        6.63 |                 5.22 |                 7.88 |                  0.70 |                      4.60 |                    73
+

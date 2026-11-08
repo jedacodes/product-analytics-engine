@@ -1,0 +1,24 @@
+                      exit_path                      | abandoned_sessions | pct_of_cart_abandonments 
+-----------------------------------------------------+--------------------+--------------------------
+ view_cart > begin_checkout > view_shipping_costs    |               6162 |                    52.44
+ view_product > add_to_cart > view_cart              |               4113 |                    35.00
+ add_to_cart > view_cart > apply_coupon              |                826 |                     7.03
+ apply_coupon > begin_checkout > view_shipping_costs |                487 |                     4.14
+ view_product > view_product > view_product          |                 27 |                     0.23
+
+     exit_event      | abandoned_sessions | pct_of_cart_abandonments | pct_recovered_within_7d 
+---------------------+--------------------+--------------------------+-------------------------
+ view_shipping_costs |               6318 |                    56.73 |                   25.75
+ view_cart           |               3900 |                    35.02 |                   26.49
+ apply_coupon        |                778 |                     6.99 |                   28.15
+ view_product        |                 78 |                     0.70 |                   34.62
+ view_catalog        |                 30 |                     0.27 |                   26.67
+ app_open            |                 25 |                     0.22 |                   24.00
+ invite_friend       |                  7 |                     0.06 |                   42.86
+
+ platform | sessions_reaching_shipping | left_without_buying | shipping_exit_rate_pct 
+----------+----------------------------+---------------------+------------------------
+ android  |                       3499 |                2200 |                  62.88
+ ios      |                       4185 |                1838 |                  43.92
+ web      |                       6419 |                2716 |                  42.31
+
